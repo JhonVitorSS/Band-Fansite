@@ -1,11 +1,12 @@
 import "../sass/leftside.sass";
+import Logo from "../imagens/logo.png";
 
 const teste = () => {
   return (
     <>
       <section class="left-side">
         <div class="logo">
-          <img src="imagens/logo.png" alt="" />
+          <img src={Logo} alt="" />
         </div>
 
         <ul class="redes">
@@ -32,6 +33,6 @@ const teste = () => {
       </section>
     </>
   );
-}
+};
 
-export default teste
+export default teste;

@@ -28,7 +28,7 @@ const Rightside = () => {
           </ul>
         </header>
 
-        <div> adas fweqw e1eqqwe</div>
+        
       </section>
     </>
   );

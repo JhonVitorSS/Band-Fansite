@@ -10,6 +10,7 @@ function App() {
       <div class="wallpaper-mother"></div>
 
       <div class="mother">
+        
         <Leftside />
         <Rightside />
       </div>

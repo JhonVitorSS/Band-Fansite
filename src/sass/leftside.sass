@@ -2,14 +2,14 @@
 @use "variables"
 
 .left-side
-  width: 12%
-  font-size: 2em
+  width: 12vw
+  font-size: 6vh
   display: flex
-  height: 100%
+  height: 100vh
   flex-direction: column
   align-items: center
   background-color: black
-  gap: 280px
+  gap: 21vh
 
   @include mixins.mobile
     background-color: red
@@ -18,5 +18,30 @@
     position: absolute
 
 .logo
-  padding-top: 25px
+  padding-top: 2vh
   text-align: center
+  img
+    width: 90%
+
+.redes
+  display: flex
+  flex-direction: column
+  gap: 15vh
+  @include mixins.mobile
+    text-align: center
+    justify-content: flex-end
+    margin-bottom: 200000px
+
+.redes li a
+  color: #f74425
+  transition: ease-in-out 300ms
+
+  &:hover
+    color: #ffffff
+    font-size: 45px
+
+.girar
+  transition: transform ease-in-out 900ms
+
+  &:hover
+    transform: rotate(360deg)
