@@ -1,0 +1,38 @@
+@use "mixins"
+@use "variables"
+
+.right-side
+  width: 88%
+
+  & ul
+    display: flex
+    justify-content: flex-end
+    width: 100%
+    padding-top: 20px
+    padding-right: 35px
+    gap: 70px
+
+.right-side ul
+
+.right-side li a
+  color: whitesmoke
+  font-size: 21px
+  position: relative
+  transition: ease-in-out 700ms
+
+  &::after
+    content: ""
+    position: absolute
+    width: 0%
+    height: 5px
+    top: 25px
+    right: 0px
+    background-color: #efc862
+    transition: ease-in-out 300ms
+
+  &:hover
+    color: #efc862
+    font-size: 25px
+
+  &:hover::after
+    width: 100%

@@ -1,0 +1,22 @@
+@use "mixins"
+@use "variables"
+
+.left-side
+  width: 12%
+  font-size: 2em
+  display: flex
+  height: 100%
+  flex-direction: column
+  align-items: center
+  background-color: black
+  gap: 280px
+
+  @include mixins.mobile
+    background-color: red
+    width: 40px
+    height: 100%
+    position: absolute
+
+.logo
+  padding-top: 25px
+  text-align: center
