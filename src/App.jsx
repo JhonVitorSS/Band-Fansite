@@ -1,19 +1,16 @@
-import logo from "./imagens/logo.png";
-import "./sass/main.sass";
-import Leftside from "./components/Leftside";
-import Rightside from "./components/Rightside";
+import About from "./components/About";
+import Home from "./components/Home";
+import Music from "./components/Music"
+import { Routes, Route, Link } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <div class="wallpaper-hover"></div>
-      <div class="wallpaper-mother"></div>
-
-      <div class="mother">
-        
-        <Leftside />
-        <Rightside />
-      </div>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/about" element={<About />}></Route>
+        <Route path="/music" element={<Music />}></Route>
+      </Routes>
     </>
   );
 }

@@ -29,6 +29,11 @@ const teste = () => {
               <i class="fa-brands fa-twitter"></i>
             </a>
           </li>
+          <li class="girar">
+            <a href="https://open.spotify.com/artist/7o6cOczXTB8ioTAAJTbESf?si=5bz3N1_pQh-UgQhGH8Cjqw">
+              <i class="fa-brands fa-spotify"></i>
+            </a>
+          </li>
         </ul>
       </section>
     </>
